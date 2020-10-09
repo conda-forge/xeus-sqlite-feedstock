@@ -10,7 +10,7 @@ source:
   sha256: 4dcd7bfe4aff8fc97a6348aac80c1e78d128f3bc83a5273abb52102c8f10eb89
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -19,7 +19,7 @@ requirements:
     - cmake
     - make  # [unix]
   host:
-    - xeus >=0.23.2,<0.24
+    - xeus >=0.23.2<0.25
     - cppzmq
     - zeromq
     - nlohmann_json
