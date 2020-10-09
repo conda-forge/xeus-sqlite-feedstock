@@ -19,7 +19,7 @@ requirements:
     - cmake
     - make  # [unix]
   host:
-    - xeus >=0.23.2<0.25
+    - xeus >=0.23.2,<0.25
     - cppzmq
     - zeromq
     - nlohmann_json
