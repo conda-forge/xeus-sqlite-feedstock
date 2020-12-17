@@ -1,5 +1,5 @@
 {% set name = "xeus-sqlite" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/jupyter-xeus/xeus-sqlite/archive/{{ version }}.tar.gz
-  sha256: 4dcd7bfe4aff8fc97a6348aac80c1e78d128f3bc83a5273abb52102c8f10eb89
+  sha256: ac59dfd173a3a364f6bbb4645aba93d34faf8347b01590542deecacfbc998773
 
 build:
-  number: 3
+  number: 0
   skip: true  # [win]
 
 requirements:
@@ -41,7 +41,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Jupyter kernel for SQLite based on xeus'
+  summary: Jupyter kernel for SQLite based on xeus
   doc_url: https://xeus-sqlite.readthedocs.io
 
 extra:
