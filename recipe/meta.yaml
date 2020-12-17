@@ -28,6 +28,8 @@ requirements:
     - sqlitecpp
     - sqlite
     - xvega >=0.0.4
+    - xvega-bindings >=0.0.3
+    - xproperty
 
 test:
   commands:
