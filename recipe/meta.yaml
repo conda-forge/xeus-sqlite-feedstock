@@ -10,7 +10,7 @@ source:
   sha256: 4dcd7bfe4aff8fc97a6348aac80c1e78d128f3bc83a5273abb52102c8f10eb89
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win]
 
 requirements:
@@ -29,6 +29,7 @@ requirements:
     - sqlite
     - xvega >=0.0.4
     - xvega-bindings >=0.0.3
+    - xproperty
 
 test:
   commands:
