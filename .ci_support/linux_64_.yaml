@@ -20,4 +20,7 @@ sqlite:
 target_platform:
 - linux-64
 zeromq:
-- 4.3.2
+- 4.3.3
+zip_keys:
+- - cdt_name
+  - docker_image
