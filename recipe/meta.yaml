@@ -10,7 +10,7 @@ source:
   sha256: 3570b7380e7a0c1d78b5db83d1a1139e8c727d1abf9fe1dba63b29583b55f870
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -30,6 +30,9 @@ requirements:
     - xvega >=0.0.10
     - xvega-bindings >=0.0.10
     - xproperty >=0.11.0,<0.12.0
+  run:
+    - xvega >=0.0.10
+    - xvega-bindings >=0.0.10
 
 test:
   commands:
