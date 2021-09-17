@@ -1,5 +1,5 @@
 {% set name = "xeus-sqlite" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/jupyter-xeus/xeus-sqlite/archive/{{ version }}.tar.gz
-  sha256: 3570b7380e7a0c1d78b5db83d1a1139e8c727d1abf9fe1dba63b29583b55f870
+  sha256: 20f7f8671ecd64342a7b4b4409e43aa060740f509c3c3559a9498e97f845414a 
 
 build:
   number: 3
@@ -19,7 +19,7 @@ requirements:
     - cmake
     - make  # [unix]
   host:
-    - xeus >=1.0.0,<2.0.0
+    - xeus >=2.0.0,<3.0.0
     - cppzmq
     - zeromq
     - nlohmann_json
