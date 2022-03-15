@@ -1,5 +1,5 @@
 {% set name = "xeus-sqlite" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -19,7 +19,7 @@ requirements:
     - cmake
     - make  # [unix]
   host:
-    - xeus >=2.0.0,<3.0.0
+    - xeus >=2.4.0,<3.0.0
     - cppzmq
     - zeromq
     - nlohmann_json
