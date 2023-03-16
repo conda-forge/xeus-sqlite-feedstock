@@ -1,11 +1,11 @@
-About xeus-sqlite
-=================
+About xeus-sqlite-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xeus-sqlite-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/jupyter-xeus/xeus-sqlite
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xeus-sqlite-feedstock/blob/main/LICENSE.txt)
 
 Summary: Jupyter kernel for SQLite based on xeus
 
