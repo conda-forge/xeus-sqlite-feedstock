@@ -9,7 +9,9 @@ Package license: BSD-3-Clause
 
 Summary: Jupyter kernel for SQLite based on xeus
 
-Documentation: https://xeus-sqlite.readthedocs.io
+Development: https://github.com/jupyter-xeus/xeus-sqlite
+
+Documentation: https://xeus-sqlite.readthedocs.io/
 
 Current build status
 ====================
