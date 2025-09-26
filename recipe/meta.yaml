@@ -1,5 +1,5 @@
 {% set name = "xeus-sqlite" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/jupyter-xeus/xeus-sqlite/archive/{{ version }}.tar.gz
-  sha256: afe48c1808e8268dcfbdffc3b6deacbd8ac1d16ca23e3c0c7680371b61a295ba
+  sha256: cac9ac6cb8d37c94e900eba1e357dae6b47e06df707b8670fc85f6a9b5207f2a
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
 
 requirements:
