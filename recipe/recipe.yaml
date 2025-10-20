@@ -1,5 +1,5 @@
 context:
-  version: "0.8.0"
+  version: "0.9.0"
   build_number: 0
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/jupyter-xeus/xeus-sqlite/archive/${{ version }}.tar.gz
-  sha256: cac9ac6cb8d37c94e900eba1e357dae6b47e06df707b8670fc85f6a9b5207f2a
+  sha256: 2efe6f02dd6276778baa433f7045184f177916a3edb0b75beba76c0f3db6477d
 
 build:
   number: ${{ build_number }}
@@ -26,6 +26,7 @@ requirements:
   host:
     - xeus-zmq >=3.1.1,<4.0.0
     - nlohmann_json
+    - nlohmann_json-abi
     - xtl
     # cpp-tabulate 1.5 is backward incompatible
     - cpp-tabulate >=1.5
