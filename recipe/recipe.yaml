@@ -20,9 +20,7 @@ requirements:
     - ${{ compiler('cxx') }}
     - ${{ stdlib('c') }}
     - cmake
-    - if: unix
-      then:
-        - make
+    - ninja
   host:
     - xeus-zmq >=3.1.1,<4.0.0
     - nlohmann_json
@@ -41,9 +39,15 @@ requirements:
 
 tests:
   - package_contents:
+      bin:
+        - xsqlite
+      lib:
+        - xeus-sqlite
+      include:
+        - xeus-sqlite/xeus_sqlite_config.hpp
+        - xeus-sqlite/xeus_sqlite_interpreter.hpp
       files:
-        exists:
-          - bin/xsqlite
+        - ${{ "Library/" if win }}share/jupyter/kernels/xsqlite/kernel.json
 
 about:
   homepage: https://github.com/jupyter-xeus/xeus-sqlite
