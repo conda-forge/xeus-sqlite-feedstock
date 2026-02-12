@@ -1,19 +1,14 @@
 #!/bin/bash
 
+set -euxo pipefail
+
+
 if [[ ${target_platform} == linux-ppc64le ]]; then
-  cmake -DCMAKE_BUILD_TYPE=Release     \
-        -DCMAKE_INSTALL_PREFIX=$PREFIX \
-        -DCMAKE_PREFIX_PATH=$PREFIX    \
-        -DCMAKE_INSTALL_LIBDIR=lib     \
-        -DXSQL_DISABLE_TUNE_GENERIC=ON \
-        $SRC_DIR
+  export CMAKE_ARGS="${CMAKE_ARGS} -DXSQL_DISABLE_TUNE_GENERIC=ON"
 else
-  cmake -DCMAKE_BUILD_TYPE=Release     \
-        -DCMAKE_INSTALL_PREFIX=$PREFIX \
-        -DCMAKE_PREFIX_PATH=$PREFIX    \
-        -DCMAKE_INSTALL_LIBDIR=lib     \
-        -DXSQL_DISABLE_ARCH_NATIVE=ON  \
-        $SRC_DIR
+  export CMAKE_ARGS="${CMAKE_ARGS} -DXSQL_DISABLE_ARCH_NATIVE=ON"
 fi
 
-make install
+cmake -S "${SRC_DIR}" -B build/ -G Ninja ${CMAKE_ARGS}
+cmake --build build/ --parallel "${CPU_COUNT}"
+cmake --install build/
