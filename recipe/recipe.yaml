@@ -1,5 +1,5 @@
 context:
-  version: "0.9.2"
+  version: "0.9.3"
   build_number: 0
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/jupyter-xeus/xeus-sqlite/archive/${{ version }}.tar.gz
-  sha256: c8eafc86e11ce69776dba99c174496203286603ff72c630a1f4b3fbeac73c61f
+  sha256: 2be2925cfa10128881823eb85683b240a6d4a10eca5f9b2629b2dd27c0a37ba1
 
 build:
   number: ${{ build_number }}
