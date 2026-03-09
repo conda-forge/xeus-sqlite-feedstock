@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/jupyter-xeus/xeus-sqlite/archive/${{ version }}.tar.gz
-  sha156: 3e6287900697bb9afc2e0877a71db0cd7b9a71f27793f77eb2a2316adc855080
+  sha256: 3e6287900697bb9afc2e0877a71db0cd7b9a71f27793f77eb2a2316adc855080
 
 build:
   number: ${{ build_number }}
