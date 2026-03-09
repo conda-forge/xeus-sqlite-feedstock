@@ -1,5 +1,5 @@
 context:
-  version: "0.9.3"
+  version: "0.10.0"
   build_number: 0
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/jupyter-xeus/xeus-sqlite/archive/${{ version }}.tar.gz
-  sha256: 2be2925cfa10128881823eb85683b240a6d4a10eca5f9b2629b2dd27c0a37ba1
+  sha156: 3e6287900697bb9afc2e0877a71db0cd7b9a71f27793f77eb2a2316adc855080
 
 build:
   number: ${{ build_number }}
@@ -22,7 +22,7 @@ requirements:
     - cmake
     - ninja
   host:
-    - xeus-zmq >=3.1.1,<4.0.0
+    - xeus-zmq >=4.0.0,<5.0.0
     - nlohmann_json
     - nlohmann_json-abi
     - xtl
